@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Card } from 'primereact/card';
 import { InputText } from 'primereact/inputtext';
 import { Message } from 'primereact/message';
+import { Button } from 'primereact/button';
 import './convert.css';
 
 class Convert extends Component {
@@ -111,6 +112,15 @@ class Convert extends Component {
     this.setState({arabic, roman, arabicErrorMessage});
   };
 
+  handleReset = (e) => {
+    e.preventDefault();
+    const roman = '';
+    const romanErrorMessage = '';
+    const arabic = '';
+    const arabicErrorMessage ='';
+    this.setState({roman, romanErrorMessage, arabic, arabicErrorMessage});
+  };
+
   componentDidMount() {
     this.initRomanDictionnary();
   }
@@ -119,7 +129,7 @@ class Convert extends Component {
     return (
       <Card title="Convertion" subTitle="Roman <-> Arabic">
         <div className="p-grid p-justify-between p-fluid app-converter">
-          <div className="p-col-3">
+          <div className="p-col">
             <span className="p-float-label">
               <InputText
                 id="roman"
@@ -132,12 +142,26 @@ class Convert extends Component {
             </span>
             {this.errorMessage(this.state.romanErrorMessage)}
           </div>
-          <div className="p-col-1">
-            <span className="pi pi-pw pi-chevron-left"></span>
-            <span className="pi pi-pw pi-minus"></span>
-            <span className="pi pi-pw pi-chevron-right"></span>
+          <div className="p-col-3 app-arrows">
+            <div className="p-grid p-justify-center">
+              <div className="p-col-12">
+                <span className="pi pi-pw pi-chevron-left"></span>
+                <span className="pi pi-pw pi-minus"></span>
+                <span className="pi pi-pw pi-chevron-right"></span>
+              </div>
+              <div className="p-col-12 p-sm-8 p-md-6 p-lg-4">
+                <Button
+                  onClick={this.handleReset}
+                  icon="pi pi-pw pi-replay"
+                  className="p-button-info"
+                  tooltip="reset"
+                  label="reset"
+                  tooltipOptions={{position: 'bottom'}}
+                />
+              </div>
+            </div>
           </div>
-          <div className="p-col-3">
+          <div className="p-col">
             <span className="p-float-label">
               <InputText
                 id="arabic"
