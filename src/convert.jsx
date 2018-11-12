@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Card } from 'primereact/card';
 import { InputText } from 'primereact/inputtext';
 import { Message } from 'primereact/message';
-import './convert.scss';
+import './convert.css';
 
 class Convert extends Component {
   state = {
