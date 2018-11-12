@@ -154,9 +154,7 @@ class Convert extends Component {
                   onClick={this.handleReset}
                   icon="pi pi-pw pi-replay"
                   className="p-button-info"
-                  tooltip="reset"
                   label="reset"
-                  tooltipOptions={{position: 'bottom'}}
                 />
               </div>
             </div>
