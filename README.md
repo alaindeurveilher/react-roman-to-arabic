@@ -22,14 +22,14 @@ All the algorithm is included in the [convert.jsx](./src/convert.jsx) file.
 1. To build the dictionnary, a for loop from `1` to `4999` is used
 1. To transform the Arabic number into Roman we divide first by `1000`, then `500`, `100`, `50`, `10`, `5` and finally by `1`
 1. For each step, for the number of times the number is divisible we replace by the corresponding Roman letter:
-  1. `1000` -> `M`
-  1. `500` -> `D`
-  1. `100` -> `C`
-  1. `50` -> `L`
-  1. `10` -> `X`
-  1. `5` -> `V`
-  1. `1` -> `I`
-1. After that some convertion rules are applied, because in Roman numbers, sometimes a substraction is written. For instance instead of writting four like this `IIII` Roman writes **five minus one** like this `IV`.
+    - `1000` -> `M`
+    - `500` -> `D`
+    - `100` -> `C`
+    - `50` -> `L`
+    - `10` -> `X`
+    - `5` -> `V`
+    - `1` -> `I`
+1. After that some convertion rules are applied, because in Roman numbers, sometimes a substraction is written. For instance instead of writting **four** like this `IIII`, Roman writes instead **five minus one** like this `IV`
 1. The convertion from Roman number to Arabic is then just checking its existence in the dictionnary
 
 ## Available Scripts
