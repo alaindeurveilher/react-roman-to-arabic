@@ -8,8 +8,12 @@
 # testing
 /coverage
 
-# production
-/build
+## production
+#/build
+
+# deployement on Heroku
+build/static/css/*.map
+build/static/js/*.map
 
 # misc
 .DS_Store
