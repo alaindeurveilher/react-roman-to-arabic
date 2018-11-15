@@ -87,6 +87,7 @@ class Convert extends Component {
     const input = e.target.value.toUpperCase();
     const roman = input;
     let arabic = '';
+    const arabicErrorMessage = '';
     let romanErrorMessage = '';
 
     if (!input.trim()) return this.setState({roman: '', arabic, romanErrorMessage});;
@@ -96,20 +97,21 @@ class Convert extends Component {
     if (!(input in this.state.romanDictionnary)) romanErrorMessage = this.invalidRomanNumber(input);
     else arabic = this.state.romanDictionnary[roman];
 
-    this.setState({roman, arabic, romanErrorMessage});
+    this.setState({roman, arabic, romanErrorMessage, arabicErrorMessage});
   };
 
   handleChangeArabic = (e) => {
     const value = e.target.value;
     let arabic = parseInt(value);
     let roman = '';
+    const romanErrorMessage = '';
     let arabicErrorMessage = '';
 
     if (!value) arabic = '';
     else if (arabic < 0 || arabic >= 5000) arabicErrorMessage = 'Only positive number lower than 5000 are allowed.';
     else roman = this.arabicConvert(arabic);
 
-    this.setState({arabic, roman, arabicErrorMessage});
+    this.setState({arabic, roman, arabicErrorMessage, romanErrorMessage});
   };
 
   handleReset = (e) => {

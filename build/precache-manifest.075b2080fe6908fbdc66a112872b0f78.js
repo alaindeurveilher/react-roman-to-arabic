@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/static/media/open-sans-v15-latin-700.623e3205.woff"
   },
   {
-    "revision": "8401160ca7926b3996d1",
+    "revision": "607ce361c59c4c62c4ce",
     "url": "/static/css/main.7bc8625d.chunk.css"
   },
   {
@@ -28,20 +28,20 @@ self.__precacheManifest = [
     "url": "/static/media/open-sans-v15-latin-300.60c86674.woff2"
   },
   {
-    "revision": "cffb686d7d2f4682df8342bd4d276e09",
-    "url": "/static/media/open-sans-v15-latin-regular.cffb686d.woff2"
-  },
-  {
     "revision": "9dce7f01715340861bdb57318e2f3fdc",
     "url": "/static/media/open-sans-v15-latin-regular.9dce7f01.eot"
   },
   {
-    "revision": "d08c09f2f169f4a6edbcf8b8d1636cb4",
-    "url": "/static/media/open-sans-v15-latin-700.d08c09f2.woff2"
+    "revision": "cffb686d7d2f4682df8342bd4d276e09",
+    "url": "/static/media/open-sans-v15-latin-regular.cffb686d.woff2"
   },
   {
     "revision": "148a6749baa5f658a45183ddb5ee159f",
     "url": "/static/media/open-sans-v15-latin-700.148a6749.eot"
+  },
+  {
+    "revision": "d08c09f2f169f4a6edbcf8b8d1636cb4",
+    "url": "/static/media/open-sans-v15-latin-700.d08c09f2.woff2"
   },
   {
     "revision": "521d17bc9f3526c690e8ada6eee55bec",
@@ -52,8 +52,8 @@ self.__precacheManifest = [
     "url": "/static/media/open-sans-v15-latin-regular.bf2d0783.woff"
   },
   {
-    "revision": "8401160ca7926b3996d1",
-    "url": "/static/js/main.8401160c.chunk.js"
+    "revision": "607ce361c59c4c62c4ce",
+    "url": "/static/js/main.607ce361.chunk.js"
   },
   {
     "revision": "177cc92d2e8027712a8c1724abd272cd",
@@ -104,7 +104,7 @@ self.__precacheManifest = [
     "url": "/static/css/1.d928da07.chunk.css"
   },
   {
-    "revision": "ce878960ec5b8f83371c823b50a57499",
+    "revision": "2a6546792deeb0f24b4a17e69fad7ea8",
     "url": "/index.html"
   }
 ];
